@@ -2,63 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name – Research Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rafe Md Abu Zayed | Research Website</title>
+
+  <meta
+    name="description"
+    content="Research website of Rafe Md Abu Zayed, PhD researcher in Mechanical Engineering at The University of Akron."
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header>
     <h1>Rafe Md Abu Zayed</h1>
-    <p>PhD Researcher | Mechanical Engineering | The University of Akron</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#cv">CV</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+
+    <p class="subtitle">
+      PhD Researcher | Mechanical Engineering | The University of Akron
+    </p>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a PhD student researching magnetic microswimmers, active matter, and fluid dynamics. 
-    My work combines computational modeling, HPC simulations, and theoretical physics to understand 
-    collective behaviors and phase transitions.</p>
-  </section>
+  <main>
 
-  <section id="cv">
-    <h2>Curriculum Vitae</h2>
-    <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
-  </section>
+    <section class="hero">
+      <h2>Welcome</h2>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Your Name</strong>, Coauthor (2024). 
-      *Phase transitions in magnetic microswimmers*. Journal of Fluid Mechanics.</li>
-      <li><strong>Your Name</strong> (2023). 
-      *Boundary element simulations of Janus particles*. Physical Review E.</li>
-    </ul>
-  </section>
+      <p>
+        I am a PhD researcher in Mechanical Engineering at The University
+        of Akron. My research focuses on active matter, magnetic
+        microswimmers, self-phoretic particles, and low-Reynolds-number
+        fluid dynamics.
+      </p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Magnetic microswimmers: phase diagrams and order parameters.</li>
-      <li>BEM simulations of diffusiophoretic particles.</li>
-      <li>Machine learning models for turbulence (RANS/PINN).</li>
-    </ul>
-  </section>
+      <p>
+        I use computational modeling, high-performance computing, and
+        theoretical analysis to investigate collective behavior,
+        pattern formation, phase transitions, and the dynamics of
+        microswimmers near boundaries.
+      </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-  </section>
+      <div class="hero-links">
+        <a href="publications.html">View Publications</a>
+
+        <a
+          href="cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
+      </div>
+    </section>
+
+    <section class="research-interests">
+      <h2>Research Interests</h2>
+
+      <ul>
+        <li>Active matter and collective behavior</li>
+        <li>Magnetic and polar microswimmers</li>
+        <li>Self-phoresis of Janus particles</li>
+        <li>Low-Reynolds-number hydrodynamics</li>
+        <li>Boundary element methods</li>
+        <li>Particle-based simulations and high-performance computing</li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2025 Rafe Md Abu Zayed</p>
+    <p>&copy; 2026 Rafe Md Abu Zayed</p>
   </footer>
+
 </body>
 </html>
