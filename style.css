@@ -21,9 +21,9 @@ body {
 /* Header */
 
 header {
+  padding: 45px 20px 25px;
   background-color: #12355b;
   color: white;
-  padding: 45px 20px 25px;
   text-align: center;
 }
 
@@ -55,27 +55,29 @@ nav a {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 nav a:hover,
 nav a.active {
-  background-color: #ffffff;
+  background-color: white;
   color: #12355b;
 }
 
 
-/* Main content */
+/* Main page content */
 
 main {
-  width: min(900px, 92%);
+  width: min(1000px, 92%);
   min-height: 65vh;
   margin: 40px auto;
 }
 
 section {
   margin-bottom: 30px;
-  padding: 28px 32px;
+  padding: 30px 34px;
   border-radius: 8px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -102,14 +104,34 @@ ol {
 }
 
 
-/* Regular links */
+/* Homepage hero section */
 
-main a {
-  color: #1769aa;
+.hero {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-main a:hover {
-  color: #0d3c61;
+.hero-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border: 5px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content h2 {
+  margin-top: 0;
 }
 
 
@@ -144,6 +166,25 @@ main a:hover {
 }
 
 
+/* Regular links */
+
+main a {
+  color: #1769aa;
+}
+
+main a:hover {
+  color: #0d3c61;
+}
+
+
+/* Keep button text white */
+
+main .hero-links a,
+main .button {
+  color: white;
+}
+
+
 /* Publications */
 
 .publication-list li {
@@ -158,8 +199,8 @@ main a:hover {
 }
 
 .contact-details ul {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 
 .note {
@@ -185,7 +226,7 @@ footer p {
 
 /* Mobile layout */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   header {
     padding: 32px 15px 20px;
   }
@@ -213,6 +254,20 @@ footer p {
 
   section {
     padding: 22px 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .profile-photo {
+    width: 210px;
+    height: 210px;
+  }
+
+  .hero-content {
+    text-align: left;
   }
 
   .hero-links {
